@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A13550A0D2A8590145DB1EF7F7B673D0DBBE1F3B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B591F0A2F894B35ED0FDAA0BAA6669264F3F7954" : 9223372036854775807,
+    "A13550A0D2A8590145DB1EF7F7B673D0DBBE1F3B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70D84E68-5A80-4913-BED5-E3E12A9D3CBA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B591F0A2F894B35ED0FDAA0BAA6669264F3F7954" : "",
+    "A13550A0D2A8590145DB1EF7F7B673D0DBBE1F3B" : "telemedicineApp%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "telemedicineApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "telemedicineApp\/telemedicineApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aassha\/telemedicineApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A13550A0D2A8590145DB1EF7F7B673D0DBBE1F3B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aassha\/teleMedicine2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B591F0A2F894B35ED0FDAA0BAA6669264F3F7954"
+    }
+  ]
+}
