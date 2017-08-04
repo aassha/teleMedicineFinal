@@ -68,7 +68,7 @@
                                     <segue destination="m0P-fE-jxK" kind="show" id="bgA-Lu-gym"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-ok-po5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-ok-po5">
                                 <rect key="frame" x="112" y="92" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="psA-9S-XWb"/>
@@ -1082,7 +1082,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appIcon" width="300" height="300"/>
         <image name="documents" width="25" height="25"/>
         <image name="profileIcon" width="256" height="256"/>
         <image name="profileIcon-1" width="25" height="25"/>
