@@ -45,10 +45,6 @@ class Patient: PFUser {
     }
 
     init(name: String, sex: String, age: Int, language: String, profilePicture: PFFile) {
-        print(name)
-        print(sex)
-        print(age)
-        print(language)
         self.name = name
         self.sex = sex
         self.age = age

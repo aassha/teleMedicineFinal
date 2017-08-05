@@ -16,7 +16,17 @@ class Login: UIViewController {
     
     @IBOutlet weak var login: CustomButton?
     
+    
+    @IBOutlet weak var animatedImage: customImageAnimation!
+    
     @IBOutlet weak var signUp: CustomButton?
+    
+    override func viewDidLoad() {
+        let hideKeyboardTap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardTapped))
+        hideKeyboardTap.numberOfTapsRequired = 1
+        self.view.isUserInteractionEnabled = true
+        self.view.addGestureRecognizer(hideKeyboardTap)
+    }
     
     @IBAction func loginFunc(_ sender: Any) {
         if (usernameTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! {
@@ -28,26 +38,25 @@ class Login: UIViewController {
         
         PFUser.logInWithUsername(inBackground: usernameTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: Error?) in
             if error == nil {
-                //saves the username is memory
-                UserDefaults.standard.set(user!.username, forKey: "username")
-                UserDefaults.standard.synchronize()
-                //what does this do?
+               UserDefaults.standard.set(user!.username, forKey: "username")
+               UserDefaults.standard.synchronize()
                 let appDelegate: AppDelegate =  UIApplication.shared.delegate as! AppDelegate
-                
-                
                 appDelegate.login()
                 
             } else {
-                let incorrectAccount = UIAlertController(title: "No Account Found!", message: "Please check the password and username", preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: "Error", message: error!.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
                 let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
-                incorrectAccount.addAction(ok)
-                self.present(incorrectAccount, animated: true, completion: nil)
+                alert.addAction(ok)
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
-    
+    func hideKeyboardTapped(recognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     @IBAction func signUpFunc(_ sender: Any) {
     }
     
+
 }
 

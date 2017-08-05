@@ -70,17 +70,27 @@ class DoctorProfileViewController: UIViewController {
             }
         }
     }
-//    var experience: Int = 0 {
-//        didSet {
-//            experienceLabel.text = String(experience)
-//        }
-//    }
     
-//    var price: Int = 0 {
+//    var phoneNum: String = "" {
 //        didSet {
-//            priceLabel.text = String(price)
+//            if isViewLoaded {
+//                phoneNumber = phoneNum
+//            }
 //        }
 //    }
+    var experience: String = ""{
+        didSet {
+            experienceLabel.text = experience
+        }
+    }
+    
+    var price: String = "" {
+        didSet {
+            priceLabel.text = price
+        }
+    }
+    var phoneNumber:String?
+   
     @IBOutlet weak var profileImage: UIImageView!
     
     @IBOutlet weak var doctorName: UILabel!
@@ -100,11 +110,11 @@ class DoctorProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         doctorName.text! = doctorNameVar!
-        priceLabel.text = String(50)
+        priceLabel.text = "50"
         locationLabel.text = location
         languageLabel.text = language
         specialtyLabel.text = specialty
-        experienceLabel.text = String(10)
+        experienceLabel.text = "10"
         stateLabel.text = state
     }
     

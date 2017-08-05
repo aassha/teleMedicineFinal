@@ -38,7 +38,7 @@ class DoctorModel {
         Doctor(name: "An", specialty: .cardiology, price: 75, language: "English", state: .online, location: "USA", numYearsPractice: 5, phoneNumber: 1),
         Doctor(name: "An", specialty: .dentistry, price: 75, language: "English", state: .offline, location: "USA", numYearsPractice: 5, phoneNumber: 1),
         Doctor(name: "Shah", specialty: .pediatrics, price: 100, language: "English", state: .online, location: "USA", numYearsPractice: 5, phoneNumber: 1),
-        Doctor(name: "AnHoang", specialty: .cardiology, price: 10, language: "English", state: .online, location: "USA", numYearsPractice: 5, phoneNumber: 3129345461)]
+        Doctor(name: "AnHoang", specialty: .cardiology, price: 10, language: "English", state: .online, location: "USA", numYearsPractice: 5, phoneNumber: 31)]
     
     func getNumberofDoctorsInEachSpecialty(specialty:Specialty) -> [Doctor] {
         //SOURCE: https://stackoverflow.com/questions/40804458/how-to-filter-an-array-of-structs-with-value-of-other-array-in-swift
